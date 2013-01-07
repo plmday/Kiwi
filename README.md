@@ -14,7 +14,7 @@ source format](http://txt2tags.org/manpage.html#markup).  It is intended to be
 *elegant* and *intuitive*.  The syntax is not fixed yet.  But here is part of
 it.
 
-###2.1. Kiki Headings (Till Level 6)###
+###2.1. Kiwi Headings (Till Level 6)###
 
 ####2.1.1. Kiwi Unnumbered Headings####
 
@@ -83,4 +83,9 @@ A blank line separates them.
 
     --strikeout--
 <strike>strikeout</strike>
+
+###2.5. Kiwi Horizontal Rules###
+
+    ----
+----
 
