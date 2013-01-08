@@ -73,7 +73,7 @@ A blank line separates them.
 ###2.4. Kiwi Texts###
 
     ||strong||
-||strong||
+**strong**
 
     //emphasized//
 *emphasized*
