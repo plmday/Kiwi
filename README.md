@@ -84,11 +84,15 @@ A blank line separates them.
 
     __underlined__
 
-<u>underlined</u>
+in HTML
+
+    <u>underlined</u>
 
     --strikeout--
 
-<strike>strikeout</strike>
+in HTML
+
+    <strike>strikeout</strike>
 
 ###2.5. Kiwi Horizontal Rules###
 
