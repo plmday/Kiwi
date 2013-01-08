@@ -1,12 +1,13 @@
 #Kiwi Wiki#
 
-Kiwi is a light-weight Wiki markup language.  It is *elegant* and *intuitive*.
+Kiwi is a light-weight [Wiki markup
+language](http://c2.com/cgi/wiki?WikiMarkupLanguage).  It is intended to be
+*elegant* and *intuitive*.
 
 ##1. Motivation##
 
-Every [Wiki markup language](http://c2.com/cgi/wiki?WikiMarkupLanguage) in use
-today sucks!  Their syntax is inelegant and unintuitive.  Kiwi is meant to
-remedy this.
+Every Wiki markup language in use today sucks!  Their syntax is inelegant and
+unintuitive.  Kiwi is meant to remedy this.
 
 ##2. Kiwi Syntax##
 
