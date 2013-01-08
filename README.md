@@ -20,33 +20,53 @@ Here is part of it.
 
 ####2.1.1. Kiwi Unnumbered Headings####
 
-    =Unnumbered Heading 1=
+```
+=Unnumbered Heading 1=
+```
+
 #Unnumbered Heading 1#
 
-    ==Unnumbered Heading 2==
+```
+==Unnumbered Heading 2==
+```
+
 ##Unnumbered Heading 2##
 
-    ===Unnumbered Heading 3===
+```
+===Unnumbered Heading 3===
+```
+
 ###Unnumbered Heading 3###
 
 ####2.1.2. Kiwi Numbered Headings####
 
-    #Numbered Heading 1#
+```
+#Numbered Heading 1#
+```
+
 #1. Numbered Heading 1#
 
-    ##Numbered Heading 2##
+```
+##Numbered Heading 2##
+```
+
 ##1.1. Numbered Heading 2##
 
-    ###Numbered Heading 3###
+```
+###Numbered Heading 3###
+```
+
 ###1.1.1. Numbered Heading 3###
 
 ###2.2. Kiwi Lists###
 
 ####2.2.1. Kiwi Unordered Lists####
 
-    - Red
-      - Green
-        - Blue
+```
+- Red
+  - Green
+    - Blue
+```
 
 * Red
    * Green
@@ -54,9 +74,11 @@ Here is part of it.
 
 ####2.2.2. Kiwi Ordered Lists####
 
-    + Red
-      + Green
-        + Blue
+```
++ Red
+  + Green
+    + Blue
+```
 
 1. Red
    1. Green
@@ -64,9 +86,11 @@ Here is part of it.
 
 ###2.3. Kiwi Paragraph###
 
-    A paragraph is made by one or more lines.
+```
+A paragraph is made by one or more lines.
 
-    A blank line separates them.
+A blank line separates them.
+```
 
 A paragraph is made by one or more lines.
 
@@ -74,32 +98,42 @@ A blank line separates them.
 
 ###2.4. Kiwi Texts###
 
-    ||strong||
+```
+||strong||
+```
 
 **strong**
 
-    //emphasized//
+```
+//emphasized//
+```
 
 *emphasized*
 
-    __underlined__
+```
+__underlined__
+```
 
 in HTML
 
 ```
 <u>underlined</u>
 ```
-    --strikeout--
+```
+--strikeout--
+```
 
 in HTML
 
 ```
-    <strike>strikeout</strike>
+<strike>strikeout</strike>
 ```
 
 ###2.5. Kiwi Horizontal Rules###
 
-    ----
+```
+----
+```
 
 ----
 
