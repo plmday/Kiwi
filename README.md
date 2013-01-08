@@ -32,7 +32,7 @@ it.
     #Numbered Heading 1#
 #1. Numbered Heading 1#
 
-    ##Unnumbered Heading 2##
+    ##Numbered Heading 2##
 ##1.1. Numbered Heading 2##
 
     ###Numbered Heading 3###
@@ -72,8 +72,8 @@ A blank line separates them.
 
 ###2.4. Kiwi Texts###
 
-    **strong**
-**strong**
+    ||strong||
+||strong||
 
     //emphasized//
 *emphasized*
