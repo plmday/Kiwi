@@ -75,19 +75,24 @@ A blank line separates them.
 ###2.4. Kiwi Texts###
 
     ||strong||
+
 **strong**
 
     //emphasized//
+
 *emphasized*
 
     __underlined__
+
 <u>underlined</u>
 
     --strikeout--
+
 <strike>strikeout</strike>
 
 ###2.5. Kiwi Horizontal Rules###
 
     ----
+
 ----
 
