@@ -86,13 +86,16 @@ A blank line separates them.
 
 in HTML
 
-    <u>underlined</u>
-
+```
+<u>underlined</u>
+```
     --strikeout--
 
 in HTML
 
+```
     <strike>strikeout</strike>
+```
 
 ###2.5. Kiwi Horizontal Rules###
 
