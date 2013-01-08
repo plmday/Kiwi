@@ -1,18 +1,19 @@
-#Kiwi --- A Light-Weight Wiki Markup Language#
+#Kiwi Wiki#
+
+Kiwi is a light-weight Wiki markup language.  It is *elegant* and *intuitive*.
 
 ##1. Motivation##
 
-Every [Wiki Markup Language](http://c2.com/cgi/wiki?WikiMarkupLanguage) in use
-sucks!  Their syntax is inelegant and unintuitive.  Kiwi is meant to remedy
-this.
+Every [Wiki markup language](http://c2.com/cgi/wiki?WikiMarkupLanguage) in use
+today sucks!  Their syntax is inelegant and unintuitive.  Kiwi is meant to
+remedy this.
 
-##2. Kiwi##
+##2. Kiwi Syntax##
 
 The syntax is inspired by both the [Creole
 1.0](http://www.wikicreole.org/wiki/Creole1.0) Wiki standard and the [txt2tag
-source format](http://txt2tags.org/manpage.html#markup).  It is intended to be
-*elegant* and *intuitive*.  The syntax is not fixed yet.  But here is part of
-it.
+source format](http://txt2tags.org/manpage.html#markup).  It is not fixed yet.
+Here is part of it.
 
 ###2.1. Kiwi Headings (Till Level 6)###
 
