@@ -131,7 +131,9 @@ code block
 code block
 ```
 
-###2.5. Kiwi Texts###
+###2.5. Kiwi Text###
+
+####2.5.1. Kiwi Bold Text####
 
 ```
 ||bold text||
@@ -139,11 +141,15 @@ code block
 
 **bold text**
 
+####2.5.2. Kiwi Emphasized Text####
+
 ```
 //emphasized text//
 ```
 
 *emphasized text*
+
+####2.5.3. Kiwi Underlined Text####
 
 ```
 __underlined text__
@@ -155,6 +161,8 @@ in HTML
 <u>underlined text</u>
 ```
 
+####2.5.4. Kiwi Strikethrough Text####
+
 ```
 --strikethrough text--
 ```
@@ -164,6 +172,8 @@ in HTML
 ```
 <strike>strikethrough text</strike>
 ```
+
+####2.5.5. Kiwi Code Piece####
 
 ```
 {{code piece}}
