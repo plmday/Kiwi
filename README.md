@@ -89,10 +89,8 @@ Here is part of it.
 ```
 Red
 : a color
-
 Green
 : a color
-
 Blue
 : a color
 ```
@@ -102,10 +100,8 @@ in HTML
 <dl>
  <dt>Red</dt>
  <dd>a color</dd>
- 
  <dt>Green</dt>
  <dd>a color</dd>
-
  <dt>Blue</dt>
  <dd>a color</dd>
 </dl>
@@ -114,14 +110,14 @@ in HTML
 ###2.3. Kiwi Paragraph###
 
 ```
-A paragraph is made by one or more lines.
+A paragraph consists of one or more lines.
 
-A blank line separates them.
+A blank line ends a paragraph.
 ```
 
-A paragraph is made by one or more lines.
+A paragraph consists of one or more lines.
 
-A blank line separates them.
+A blank line ends a paragraph.
 
 ###2.4. Kiwi Code Blocks###
 
