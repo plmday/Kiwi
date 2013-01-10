@@ -84,6 +84,33 @@ Here is part of it.
    1. Green
       1. blue
 
+####2.2.3. Kiwi Definition Lists####
+
+```
+Red
+: a color
+
+Green
+: a color
+
+Blue
+: a color
+```
+in HTML
+
+```
+<dl>
+ <dt>Red</dt>
+ <dd>a color</dd>
+ 
+ <dt>Green</dt>
+ <dd>a color</dd>
+
+ <dt>Blue</dt>
+ <dd>a color</dd>
+</dl>
+```
+
 ###2.3. Kiwi Paragraph###
 
 ```
@@ -96,38 +123,57 @@ A paragraph is made by one or more lines.
 
 A blank line separates them.
 
-###2.4. Kiwi Texts###
+###2.4. Kiwi Code Blocks###
 
 ```
-||strong||
+{{{
+code block
+}}}
 ```
 
-**strong**
-
 ```
-//emphasized//
+code block
 ```
 
-*emphasized*
+###2.5. Kiwi Texts###
 
 ```
-__underlined__
+||bold text||
+```
+
+**bold text**
+
+```
+//emphasized text//
+```
+
+*emphasized text*
+
+```
+__underlined text__
 ```
 
 in HTML
 
 ```
-<u>underlined</u>
+<u>underlined text</u>
 ```
+
 ```
---strikeout--
+--strikethrough text--
 ```
 
 in HTML
 
 ```
-<strike>strikeout</strike>
+<strike>strikethrough text</strike>
 ```
+
+```
+{{code piece}}
+```
+
+`code piece`
 
 ###2.5. Kiwi Horizontal Rules###
 
