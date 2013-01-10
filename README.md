@@ -119,7 +119,7 @@ A paragraph consists of one or more lines.
 
 A blank line ends a paragraph.
 
-###2.4. Kiwi Code Blocks###
+###2.4. Kiwi Code Block###
 
 ```
 {{{
@@ -176,10 +176,10 @@ in HTML
 ####2.5.5. Kiwi Code Piece####
 
 ```
-{{code piece}}
+{{code piece}} in text
 ```
 
-`code piece`
+`code piece` in text
 
 ###2.5. Kiwi Horizontal Rules###
 
