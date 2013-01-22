@@ -140,15 +140,13 @@ code block
 code block
 ```
 
-Symbols like `\`\`\`` or `'''` are not chosen as they sit too much high above
+Symbols like `` ``` `` or `'''` are not chosen as they sit too much high above
 the baseline, which makes it hard for the eyes to isolate them from adjacent
 lines.  Compare the following syntax chosen by Markdown with the above syntax:
 
-```
-```
-code block
-```
-```
+    ```
+    code block
+    ```
 
 ###2.5. Kiwi Text###
 
@@ -205,7 +203,7 @@ He was a bachelor student druing 2004--2008 and a master student during
 2008--2010.
 ```
 
-But the as follows should.
+But the text as follows should.
 
 ```
 He was a bachelor student druing 2004 --2008 and a master student during
