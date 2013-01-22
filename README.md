@@ -6,8 +6,8 @@ language](http://c2.com/cgi/wiki?WikiMarkupLanguage).  It is intended to be
 
 ##1. Motivation##
 
-Every Wiki markup language in use today sucks!  Their syntax is inelegant and
-unintuitive.  Kiwi is meant to remedy this.
+Every Wiki markup language in use today sucks!  Their syntax is *neither*
+elegant *nor* intuitive.  Kiwi means to remedy this.
 
 ##2. Kiwi Syntax##
 
@@ -18,47 +18,54 @@ Here is part of it.
 
 ###2.1. Kiwi Headings (Till Level 6)###
 
-####2.1.1. Kiwi Unnumbered Headings####
+The syntax for unordered and ordered headings matches that for unordered and
+ordered lists.  The former defines *larger* document structures, so `=` and
+`#` are used respectively; the latter defines smaller block structures, so `-`
+and `+` are used respectively.
+
+####2.1.1. Kiwi Unordered Headings####
 
 ```
-=Unnumbered Heading 1=
+=Unordered Heading 1=
 ```
 
-#Unnumbered Heading 1#
+#Unordered Heading 1#
 
 ```
-==Unnumbered Heading 2==
+==Unordered Heading 2==
 ```
 
-##Unnumbered Heading 2##
+##Unordered Heading 2##
 
 ```
-===Unnumbered Heading 3===
+===Unordered Heading 3===
 ```
 
-###Unnumbered Heading 3###
+###Unordered Heading 3###
 
-####2.1.2. Kiwi Numbered Headings####
-
-```
-#Numbered Heading 1#
-```
-
-#1. Numbered Heading 1#
+####2.1.2. Kiwi Ordered Headings####
 
 ```
-##Numbered Heading 2##
+#Ordered Heading 1#
 ```
 
-##1.1. Numbered Heading 2##
+#1. Ordered Heading 1#
 
 ```
-###Numbered Heading 3###
+##Ordered Heading 2##
 ```
 
-###1.1.1. Numbered Heading 3###
+##1.1. Ordered Heading 2##
+
+```
+###Ordered Heading 3###
+```
+
+###1.1.1. Ordered Heading 3###
 
 ###2.2. Kiwi Lists###
+
+Refer to the remarks on the syntax for headings.
 
 ####2.2.1. Kiwi Unordered Lists####
 
@@ -121,6 +128,8 @@ A blank line ends a paragraph.
 
 ###2.4. Kiwi Code Block###
 
+The simple requirement is that the symbols chosen should remind of code.
+Braces are probably the most-used symbols in code.
 ```
 {{{
 code block
@@ -131,7 +140,21 @@ code block
 code block
 ```
 
+Symbols like `\`\`\`` or `'''` are not chosen as they sit too much high above
+the baseline, which makes it hard for the eyes to isolate them from adjacent
+lines.  Compare the following syntax chosen by Markdown with the above syntax:
+
+```
+```
+code block
+```
+```
+
 ###2.5. Kiwi Text###
+
+The markup syntax for font faces all use *linear* symbols.  These symbols
+should as much as possible suggest the look the surrounded text will get after
+formatting.
 
 ####2.5.1. Kiwi Bold Text####
 
@@ -164,16 +187,36 @@ in HTML
 ####2.5.4. Kiwi Strikethrough Text####
 
 ```
---strikethrough text--
+--strikeout text--
 ```
 
 in HTML
 
 ```
-<strike>strikethrough text</strike>
+<strike>strikeout text</strike>
+```
+
+When using strikeouts, it is recommended leaving at least one space at both
+the begining and the end, because two hyphens `--` are reserved for the
+en-dash.  Text like the following should not be formatted as strikeout.
+
+```
+He was a bachelor student druing 2004--2008 and a master student during
+2008--2010.
+```
+
+But the as follows should.
+
+```
+He was a bachelor student druing 2004 --2008 and a master student during
+2008-- 2010.
 ```
 
 ####2.5.5. Kiwi Code Piece####
+
+For inlined code, since it is smaller, their markup syntax better only differs
+from that for a code block on *weight*.  Hence the same symbols are used but
+they are *lighter*.
 
 ```
 {{code piece}} in text
@@ -182,6 +225,9 @@ in HTML
 `code piece` in text
 
 ###2.5. Kiwi Horizontal Rules###
+
+The markup must contain at least four (beyond that the number does not matter)
+hyphens because three hyphens `---` are reserved for the em-dash.
 
 ```
 ----
