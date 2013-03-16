@@ -211,9 +211,9 @@ He was a bachelor student druing 2004 --2008 and a master student during
 2008-- 2010.
 ```
 
-####2.5.5. Kiwi Code Piece####
+####2.5.5. Kiwi Inline Code####
 
-For inlined code, since it is smaller, their markup syntax better only differs
+For inline code, since it is smaller, their markup syntax better only differs
 from that for a code block on *weight*.  Hence the same symbols are used but
 they are *lighter*.
 
@@ -223,7 +223,7 @@ they are *lighter*.
 
 `code piece` in text
 
-###2.5. Kiwi Horizontal Rules###
+###2.6. Kiwi Horizontal Rules###
 
 The markup must contain at least four (beyond that the number does not matter)
 hyphens because three hyphens `---` are reserved for the em-dash.
