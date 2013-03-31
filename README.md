@@ -314,3 +314,84 @@ nested bullets for unordered lists.
 
 -------
 
+###2.10. Kiwi Cross-References
+
+####2.10.1. Kiwi Labels
+
+```
+Here < : label>
+```
+
+####2.10.2. Kiwi References
+
+```
+<_ : label>
+```
+
+```
+<There : label>
+```
+
+###2.11. Kiwi Hyper-References
+
+```
+<README | README.md>
+```
+
+or
+
+```
+<README | ./README.md>
+```
+
+or
+
+```
+<README | ../Kiwi/README.md>
+```
+
+or
+
+```
+<README | file:///home/day/Kiwi/README.md>
+```
+
+or
+
+
+```
+<README | file://dreams.oz/home/day/Development/Projects/Kiwi/README.md>
+```
+
+or
+
+```
+<README | ftp://dreams.oz/home/day/Development/Projects/Kiwi/README.md>
+```
+
+or
+
+```
+<Kiwi | http://github.com/plmday/Kiwi>
+```
+
+or
+
+```
+<Email me | day@dreams.oz>
+```
+
+###2.12. Kiwi File Inclusion
+
+####2.12.1. Kiwi Text File Inclusion
+
+```
+< ! README.md>
+```
+
+####2.12.2. Kiwi Image File Inclusion
+
+```
+<Caption ! image.ext>
+```
+
