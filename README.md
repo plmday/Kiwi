@@ -16,7 +16,7 @@ The syntax is inspired by both the [Creole
 source format](http://txt2tags.org/manpage.html#markup).  It is not fixed yet.
 Here is part of it.
 
-###2.1. Kiwi Headings (Till Level 6)
+###2.1. Kiwi Headings (Up to Level 6)
 
 The syntax for unordered and ordered headings matches that for unordered and
 ordered lists.  The former defines *larger* document structures, so `=` and
@@ -33,17 +33,23 @@ only one empty line (or more) is required.
 =Unordered Heading 1
 ```
 
+effects
+
 #Unordered Heading 1
 
 ```
 ==Unordered Heading 2
 ```
 
+effects
+
 ##Unordered Heading 2
 
 ```
 ===Unordered Heading 3
 ```
+
+effects
 
 ###Unordered Heading 3
 
@@ -53,11 +59,15 @@ only one empty line (or more) is required.
 #Ordered Heading 1
 ```
 
+effects
+
 #1. Ordered Heading 1
 
 ```
 ##Ordered Heading 2
 ```
+
+effects
 
 ##1.1. Ordered Heading 2
 
@@ -65,9 +75,11 @@ only one empty line (or more) is required.
 ###Ordered Heading 3
 ```
 
+effects
+
 ###1.1.1. Ordered Heading 3
 
-###2.2. Kiwi Lists
+###2.2. Kiwi Lists (Up to Level 6)
 
 Refer to the remarks on the syntax for headings.
 
@@ -79,9 +91,11 @@ Refer to the remarks on the syntax for headings.
 --- Blue
 ```
 
+effects
+
 * Red
-   * Green
-      * Blue
+    * Green
+        * Blue
 
 ####2.2.2. Kiwi Ordered Lists
 
@@ -91,9 +105,11 @@ Refer to the remarks on the syntax for headings.
 +++ Blue
 ```
 
+effects
+
 1. Red
-   1. Green
-      1. blue
+    1. Green
+        1. blue
 
 ####2.2.3. Kiwi Definition Lists
 
@@ -105,9 +121,9 @@ Green
 Blue
 : a color
 ```
-in HTML
 
-```
+effects
+
 <dl>
  <dt>Red</dt>
  <dd>a color</dd>
@@ -116,7 +132,6 @@ in HTML
  <dt>Blue</dt>
  <dd>a color</dd>
 </dl>
-```
 
 ###2.3. Kiwi Paragraph
 
@@ -125,6 +140,8 @@ A paragraph consists of one or more lines.
 
 A blank line ends a paragraph.
 ```
+
+effects
 
 A paragraph consists of one or more lines.
 
@@ -141,68 +158,96 @@ code block
 }
 ```
 
+effects
+
 ```
 code block
 ```
 
 Symbols like <tt>```</tt> or <tt>'''</tt> are not chosen as they sit too much
 high above the baseline, which makes it hard for the eyes to isolate them from
-adjacent lines.  Compare the following syntax chosen by Markdown with the above
-syntax:
+adjacent lines.  Compare the following syntax chosen by Markdown with the
+above syntax:
 
     ```
     code block
     ```
 
-By default, a code block is indented one column to the right.  To indent more
-columns, use more braces.  For example, `{{` and `}}` will indent the code
-block two columns to the right.
+By default, a code block is indented one level to the right.  To indent more
+levels, use more braces.  For example, `{{` and `}}` will indent the code
+block two levels to the right.
 
-###2.5. Kiwi Text
+###2.5. Kiwi Math Formula Block
+
+```
+[
+E = mc^2
+]
+```
+
+###2.6. Kiwi Quotation Block
+
+```
+| Life itself is a quotation.  --- Jorge Luis Borges
+```
+
+effects
+
+<blockquote>
+Life itself is a quotation.  --- Jorge Luis Borges
+</blockquote>
+
+###2.7. Kiwi Indented Text Block
+
+```
+> This text is indented.
+```
+
+###2.8. Kiwi Text
 
 The markup syntax for font faces all use *linear* symbols.  These symbols
 should as much as possible suggest the look the surrounded text will get after
 formatting.
 
-####2.5.1. Kiwi Bold Text
+####2.8.1. Kiwi Bold Text
 
 ```
 |bold text|
 ```
 
+effects
+
 **bold text**
 
-####2.5.2. Kiwi Emphasized Text
+####2.8.2. Kiwi Emphasized Text
 
 ```
 /emphasized text/
 ```
 
+effects
+
 *emphasized text*
 
-####2.5.3. Kiwi Underlined Text
+####2.8.3. Kiwi Underlined Text
 
 ```
 _underlined text_
 ```
 
-in HTML
+effects
 
-```
 <u>underlined text</u>
-```
 
-####2.5.4. Kiwi Strikethrough Text
+####2.8.4. Kiwi Strikeout Text
 
 ```
 -strikeout text-
 ```
 
-in HTML
+effects
 
-```
 <strike>strikeout text</strike>
-```
 
 When using strikeouts, it is recommended leaving at least one space at both
 the begining and the end, because hyphen `-` is usually used to form a
@@ -218,7 +263,7 @@ But the text as follows should.
 A compound -word is not a pseudo- word.
 ```
 
-####2.5.5. Kiwi Inline Code
+####2.8.5. Kiwi Inline Code
 
 For inline code, since it is smaller, their markup syntax better only differs
 from that for a code block on *weight*.  Hence the same symbols are used but
@@ -228,15 +273,44 @@ they are *lighter*.
 {code piece} in text
 ```
 
+effects
+
 `code piece` in text
 
-###2.6. Kiwi Horizontal Rules
-
-The number of `~` does not matter.  But they exclusively occupy a line.
+####2.8.6. Kiwi Inline Math Formula
 
 ```
-~
+[E = mc^2]
 ```
 
-----
+####2.8.7. Kiwi Superscript
+
+```
+Super^script
+```
+
+effects
+
+Super<sup>script</sup>
+
+####2.8.8. Kiwi Subscript
+
+```
+Sub_script
+```
+
+effects
+
+Super<sub>script</sub>
+
+###2.9. Kiwi Horizontal Rules
+
+The number of `-` is required to be greater than 6, to distinguish it from
+nested bullets for unordered lists.
+
+```
+-------
+```
+
+-------
 
