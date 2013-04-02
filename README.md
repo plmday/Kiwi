@@ -16,16 +16,9 @@ The syntax is inspired by both the [Creole
 source format](http://txt2tags.org/manpage.html#markup).  It is not fixed yet.
 Here is part of it.
 
-###2.1. Kiwi Headings (Up to Level 6)
+###2.1. Kiwi Headings
 
-The syntax for unordered and ordered headings matches that for unordered and
-ordered lists.  The former defines *larger* document structures, so `=` and
-`#` are used respectively; the latter defines smaller block structures, so `-`
-and `+` are used respectively.
-
-For a heading to be recognized, it must be surrounded by (at least) two empty
-lines except that it appears in the first line of the file, in which case,
-only one empty line (or more) is required.
+The supported level is up to 6.
 
 ####2.1.1. Kiwi Unordered Headings
 
@@ -79,9 +72,18 @@ effects
 
 ###1.1.1. Ordered Heading 3
 
-###2.2. Kiwi Lists (Up to Level 6)
+For a heading to be recognized, it must be surrounded by (at least) two empty
+lines unless it appears in the first line, in which case, only one empty line
+(or more) following it is required.
 
-Refer to the remarks on the syntax for headings.
+###2.2. Kiwi Lists
+
+The supported level is up to 6.
+
+The syntax for unordered and ordered lists matches that for unordered and
+ordered headings.  The former defines smaller block structures, so `-` and `+`
+are used; the latter defines *larger* document structures, so `=` and `#` are
+used. 
 
 ####2.2.1. Kiwi Unordered Lists
 
@@ -150,7 +152,7 @@ A blank line ends a paragraph.
 ###2.4. Kiwi Code Block
 
 The simple requirement is that the symbols chosen should remind of code.
-Braces are probably the most-used symbols in code.
+Braces are probably the most-used symbols for code blocks.
 
 ```
 {
@@ -188,7 +190,9 @@ E = mc^2
 ###2.6. Kiwi Quotation Block
 
 ```
-| Life itself is a quotation.  --- Jorge Luis Borges
+|
+Life itself is a quotation.  --- Jorge Luis Borges
+|
 ```
 
 effects
@@ -200,14 +204,16 @@ Life itself is a quotation.  --- Jorge Luis Borges
 ###2.7. Kiwi Indented Text Block
 
 ```
-> This text is indented.
+>
+This text is indented.
+>
 ```
 
 ###2.8. Kiwi Text
 
 The markup syntax for font faces all use *linear* symbols.  These symbols
-should as much as possible suggest the look the surrounded text will get after
-formatting.
+should as much as possible suggest the look the surrounded text will be after
+being formatted.
 
 ####2.8.1. Kiwi Bold Text
 
@@ -250,24 +256,20 @@ effects
 <strike>strikeout text</strike>
 
 When using strikeouts, it is recommended leaving at least one space at both
-the begining and the end, because hyphen `-` is usually used to form a
+the begining and the end, because a hyphen `-` is usually used to form a
 compound word.  Text like the following should not be formatted as strikeout.
 
 ```
 A compound-word is not a pseudo-word.
 ```
 
-But the text as follows should.
+But text as follows should.
 
 ```
 A compound -word is not a pseudo- word.
 ```
 
 ####2.8.5. Kiwi Inline Code
-
-For inline code, since it is smaller, their markup syntax better only differs
-from that for a code block on *weight*.  Hence the same symbols are used but
-they are *lighter*.
 
 ```
 {code piece} in text
@@ -301,7 +303,7 @@ Sub_script
 
 effects
 
-Super<sub>script</sub>
+Sub<sub>script</sub>
 
 ###2.9. Kiwi Horizontal Rules
 
@@ -335,6 +337,10 @@ Here < : label>
 ###2.11. Kiwi Hyper-References
 
 ```
+<_ | README.md>
+```
+
+```
 <README | README.md>
 ```
 
@@ -360,13 +366,13 @@ or
 
 
 ```
-<README | file://dreams.oz/home/day/Development/Projects/Kiwi/README.md>
+<README | file://dreams.oz/home/day/Kiwi/README.md>
 ```
 
 or
 
 ```
-<README | ftp://dreams.oz/home/day/Development/Projects/Kiwi/README.md>
+<README | ftp://dreams.oz/home/day/Kiwi/README.md>
 ```
 
 or
@@ -386,7 +392,7 @@ or
 ####2.12.1. Kiwi Text File Inclusion
 
 ```
-< ! README.md>
+<_ ! README.md>
 ```
 
 ####2.12.2. Kiwi Image File Inclusion
