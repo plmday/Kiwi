@@ -13,8 +13,7 @@ elegant *nor* intuitive.  Kiwi means to remedy this.
 
 The syntax is inspired by both the [Creole
 1.0](http://www.wikicreole.org/wiki/Creole1.0) Wiki standard and the [txt2tag
-source format](http://txt2tags.org/manpage.html#markup).  It is not fixed yet.
-Here is part of it.
+markup](http://txt2tags.org/markup.html).  It is still in evolution.
 
 ###2.1. Kiwi Headings
 
