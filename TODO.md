@@ -1,0 +1,5 @@
+- Support escape sequences: Pandoc allows any character to be escaped
+- Clarify arbitrary nesting of lists
+- Support comments
+- Support meta-data 
+- Support extraction of arbitrary structures
