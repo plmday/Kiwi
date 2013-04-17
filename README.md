@@ -6,8 +6,8 @@ language](http://c2.com/cgi/wiki?WikiMarkupLanguage).  It is intended to be
 
 ##1. Motivation
 
-Every Wiki markup language in use today sucks!  Their syntax is *neither*
-elegant *nor* intuitive.  Kiwi means to remedy this.
+Every Wiki markup language in use today sucks!  Their syntax is *not* simple,
+*nor* elegant, *nor* intuitive.  Kiwi means to remedy this.
 
 ##2. Kiwi Syntax
 
