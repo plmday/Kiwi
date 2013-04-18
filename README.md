@@ -17,7 +17,7 @@ markup](http://txt2tags.org/markup.html).  It is still in evolution.
 
 ###2.1. Kiwi Headings
 
-The supported level is up to 6.
+The supported level is up to six.
 
 ####2.1.1. Kiwi Unordered Headings
 
@@ -77,14 +77,16 @@ lines unless it appears in the first line, in which case, only one empty line
 
 ###2.2. Kiwi Lists
 
-The supported level is up to 6.
+The supported level is up to six.
 
 The markup symbols for unordered and ordered lists match those for unordered
 and ordered headings.  The former defines smaller block structures, so `-` and
 `+` are used; the latter defines *larger* document structures, so `=` and `#`
-are used.  Though sub-lists are indented to indicate its nesting levels.
-Indentation is achieved by inserting at least one space (but two spaces
-recommended) before the markup symbol.
+are used.  However, notice the difference that sub-lists are indented to
+indicate its nesting levels.  One-level indentation is made by inserting two
+spaces before the markup symbol.  To indent one level further, simply
+increment the leading spaces by two.  Up to six indentation levels are
+supported.
 
 ####2.2.1. Kiwi Unordered Lists
 
