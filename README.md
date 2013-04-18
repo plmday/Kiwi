@@ -364,8 +364,8 @@ effects
 
 ###2.11. Kiwi Horizontal Rules
 
-The number of `-` is required to be greater than 6, to distinguish it from
-nested bullets for unordered lists.
+The number of `-` is required to be greater than 4, to distinguish it from
+em-dash `---`.
 
 ```
 -------
