@@ -360,7 +360,16 @@ effects
 
 <sub>multiple sub</sub>script
 
-###2.11. Kiwi Horizontal Rules
+###2.11. Kiwi Escape Symbols
+
+To escape a symbol, precede it with a single backslash ` \ `.  For example,
+`\-` gives a hyphen `-`.
+
+###2.12. Kiwi Line Break
+
+To force a line break, leaving two spaces at the end of the line.
+
+###2.13. Kiwi Horizontal Rules
 
 The number of `-` is required to be greater than 4, to distinguish it from
 em-dash `---`.
@@ -371,15 +380,15 @@ em-dash `---`.
 
 -------
 
-###2.12. Kiwi Cross-References
+###2.14. Kiwi Cross-References
 
-####2.12.1. Kiwi Labels
+####2.14.1. Kiwi Labels
 
 ```
 Here < : label>
 ```
 
-####2.12.2. Kiwi References
+####2.14.2. Kiwi References
 
 ```
 <_ : label>
@@ -389,7 +398,7 @@ Here < : label>
 <There : label>
 ```
 
-###2.13. Kiwi Hyper-References
+###2.15. Kiwi Hyper-References
 
 ```
 <_ | README.md>
@@ -444,15 +453,15 @@ or
 <Email me | day@dreams.oz>
 ```
 
-###2.14. Kiwi File Inclusion
+###2.16. Kiwi File Inclusion
 
-####2.14.1. Kiwi Text File Inclusion
+####2.16.1. Kiwi Text File Inclusion
 
 ```
 <_ ! README.md>
 ```
 
-####2.14.2. Kiwi Image File Inclusion
+####2.16.2. Kiwi Image File Inclusion
 
 ```
 <Caption ! image.ext>
