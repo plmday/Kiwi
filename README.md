@@ -363,11 +363,11 @@ effects
 ###2.11. Kiwi Escape Symbols
 
 To escape a symbol, precede it with a single backslash ` \ `.  For example,
-`\-` gives a hyphen `-`.
+`\-` gives a hyphen -.
 
 ###2.12. Kiwi Line Break
 
-To force a line break, leaving two spaces at the end of the line.
+To force a line break, leave two spaces at the end of a line.
 
 ###2.13. Kiwi Horizontal Rules
 
