@@ -17,7 +17,7 @@ markup](http://txt2tags.org/markup.html).  It is still in evolution.
 
 ###2.1. Kiwi Headings
 
-The supported level is up to six.
+Up to six levels are supported.
 
 ####2.1.1. Kiwi Unordered Headings
 
@@ -75,20 +75,19 @@ For a heading to be recognized, it must be surrounded by (at least) two empty
 lines unless it appears in the first line, in which case, only one empty line
 (or more) following it is required.
 
-###2.2. Kiwi Lists
-
-The supported level is up to six.
+###2.2. Kiwi List Block
 
 The markup symbols for unordered and ordered lists match those for unordered
 and ordered headings.  The former defines smaller block structures, so `-` and
 `+` are used; the latter defines *larger* document structures, so `=` and `#`
 are used.  However, notice the difference that sub-lists are indented to
 indicate its nesting levels.  One-level indentation is made by inserting two
-spaces before the markup symbol.  To indent one level further, simply
-increment the leading spaces by two.  Up to six indentation levels are
-supported.
+spaces before the markup symbol.  To indent further, simply increment the
+leading spaces by two.  Up to six indentation levels (including no
+indentation) are supported.  As we will see, *intuitive* indentation is a
+general feature of Kiwi.
 
-####2.2.1. Kiwi Unordered Lists
+####2.2.1. Kiwi Unordered List Block
 
 ```
 - Red
@@ -102,7 +101,7 @@ effects
     * Green
         * Blue
 
-####2.2.2. Kiwi Ordered Lists
+####2.2.2. Kiwi Ordered List Block
 
 ```
 + Red
@@ -116,7 +115,7 @@ effects
     1. Green
         1. blue
 
-####2.2.3. Kiwi Definition Lists
+####2.2.3. Kiwi Definition List Block
 
 ```
 Red
@@ -138,7 +137,7 @@ effects
  <dd>a color</dd>
 </dl>
 
-###2.3. Kiwi Paragraph
+###2.3. Kiwi Paragraph Block
 
 ```
 A paragraph consists of one or more lines.
@@ -182,7 +181,7 @@ By default, a code block *not* indented.  To indent one level to the right,
 insert one space before each line of the whole block, including the markup
 symbols.
 
-###2.5. Kiwi Math Formula Block
+###2.5. Kiwi Formula Block
 
 ```
 [
@@ -204,15 +203,7 @@ effects
 Life itself is a quotation.  --- Jorge Luis Borges
 </blockquote>
 
-###2.7. Kiwi Indented Block
-
-```
->
-This text is indented.
->
-```
-
-###2.8. Kiwi Raw Block
+###2.7. Kiwi Raw Block
 
 ```
 @
@@ -221,7 +212,7 @@ This text will be displayed |raw|, namely,
 @
 ```
 
-###2.9. Kiwi Target Block
+###2.8. Kiwi Target Block
 
 ```
 !html
@@ -231,6 +222,11 @@ This target will only be handled when the file is converted to HTML.
 !
 ```
 
+###2.9. Kiwi Indented Block
+
+Except the target block, any Kiwi block can be indented by simply inserting
+multiple spaces of two before the whole block, including the markup symbols.
+Up to six indentation levels are supported.
 
 ###2.10. Kiwi Text
 
@@ -302,7 +298,7 @@ effects
 
 `code piece` in text
 
-####2.10.6. Kiwi Inline Math Formula
+####2.10.6. Kiwi Inline Formula
 
 ```
 [E = mc^2]
