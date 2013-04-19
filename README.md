@@ -226,7 +226,7 @@ This target will only be handled when the file is converted to HTML.
 
 Except the target block, any Kiwi block can be indented by simply inserting
 multiple spaces of two before the whole block, including the markup symbols.
-Up to six indentation levels are supported.
+Up to six indentation levels (including no indentation) are supported.
 
 ###2.10. Kiwi Text
 
