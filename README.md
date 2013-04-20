@@ -372,10 +372,10 @@ The number of `-` is required to be greater than 4, to distinguish it from
 em-dash `---`.
 
 ```
--------
+----
 ```
 
--------
+----
 
 ###2.13. Kiwi Cross-References
 
