@@ -378,8 +378,8 @@ em-dash `---`.
 
 ###2.13. Kiwi References
 
-In the text associated with a label or a URL, an ` _ ` is used to indicate
-that no better face is intended for the link, show the label or the URL as is.
+` _ ` in the linked-text field indicates that no better face is intended for
+the link, show the label or the URL as is.
 
 ###2.13.1. Kiwi Labels
 
@@ -413,8 +413,9 @@ or
 
 ###2.14. Kiwi Images
 
-An image is supposed to be embedded in the rendered output, its link deserves
-the first position, *with* (`&`) an optional caption.
+An image is supposed to be embedded in the rendered output.  Hence its link
+deserves the first field, *with* (`&`) a secondary caption.  The caption is
+optional, ` _ ` indicates no caption.
 
 ```
 <image URL & _>
