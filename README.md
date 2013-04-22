@@ -377,90 +377,53 @@ em-dash `---`.
 
 ----
 
-###2.13. Kiwi Cross-References
+###2.13. Kiwi References
 
-####2.13.1. Kiwi Labels
+In the text associated with a label or a URL, an ` _ ` is used to indicate
+that no better face is intended for the link, show the label or the URL as is.
 
-```
-Here < : label>
-```
-
-####2.13.2. Kiwi References
+###2.13.1. Kiwi Labels
 
 ```
-<_ : label>
+<label : labeled text>
 ```
 
-```
-<There : label>
-```
-
-###2.14. Kiwi Hyper-References
+####2.13.2. Kiwi Cross-References
 
 ```
-<_ | README.md>
+<_ # label>
 ```
 
 or
 
 ```
-<README | README.md>
+<linked text # label>
+```
+
+###2.13.3. Kiwi Hyper-References
+
+```
+<_ @ URL>
 ```
 
 or
 
 ```
-<README | ./README.md>
+<link text @ URL>
+```
+
+###2.14. Kiwi Images
+
+An image is supposed to be embedded in the rendered output, its link deserves
+the first position, *with* (`&`) an optional caption.
+
+```
+<image URL & _>
 ```
 
 or
 
 ```
-<README | ../Kiwi/README.md>
-```
-
-or
-
-```
-<README | file:///home/day/Kiwi/README.md>
-```
-
-or
-
-
-```
-<README | file://dreams.oz/home/day/Kiwi/README.md>
-```
-
-or
-
-```
-<README | ftp://dreams.oz/home/day/Kiwi/README.md>
-```
-
-or
-
-```
-<Kiwi | http://github.com/plmday/Kiwi>
-```
-
-or
-
-```
-<Email me | day@dreams.oz>
-```
-
-###2.15. Kiwi File Inclusion
-
-####2.15.1. Kiwi Text File Inclusion
-
-```
-<_ ! README.md>
-```
-
-####2.15.2. Kiwi Image File Inclusion
-
-```
-<Caption ! image.ext>
+<image URL & caption>
 ```
 
