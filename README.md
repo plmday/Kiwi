@@ -368,7 +368,7 @@ forces a line break.
 
 ###2.12. Kiwi Horizontal Rules
 
-The number of `-` is required to be greater than 4, to distinguish it from
+The number of `-` is required to be greater than four, to distinguish it from
 em-dash `---`.
 
 ```
