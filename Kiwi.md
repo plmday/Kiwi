@@ -10,9 +10,9 @@ Every wiki markup language in use today sucks!  Their syntax is *not* simple,
 
 ##2. Kiwi Syntax
 
-The syntax is inspired by many [lightweight markup
-languages](https://en.wikipedia.org/wiki/Lightweight_markup_language).  It is
-still in evolution.
+The syntax is inspired by many other [lightweight markup
+languages](https://en.wikipedia.org/wiki/Lightweight_markup_language), thougth
+it is still in evolution.
 
 ###2.1. Kiwi Headings
 
