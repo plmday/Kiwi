@@ -3,5 +3,5 @@ This repository holds Kiwi, a *simple*, *elegant*, and *intuitive*
 language](https://en.wikipedia.org/wiki/Wiki_markup).
 
 [Kiwi.md](Kiwi.md) contains the current specificaiton of Kiwi.  It is *not*
-ripe *yet*, but *already* edible.  So enjoy it!  ;)
+ripe *yet*, but *already* has a nice taste.  So give it a try!  ;)
 
