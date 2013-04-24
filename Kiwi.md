@@ -8,17 +8,17 @@ It is intended to be *simple*, *elegant* and *intuitive*.
 Every wiki markup language in use today sucks!  Their syntax is *not* simple,
 *nor* elegant, *nor* intuitive.  Kiwi means to remedy this.
 
-##2. Kiwi Syntax
+##2. Syntax
 
 The syntax is inspired by many other [lightweight markup
 languages](https://en.wikipedia.org/wiki/Lightweight_markup_language), thougth
 it is still in evolution.
 
-###2.1. Kiwi Headings
+###2.1. Headings
 
 Up to six levels are supported.
 
-####2.1.1. Kiwi Unordered Headings
+####2.1.1. Unordered Headings
 
 ```
 =Unordered Heading 1
@@ -44,7 +44,7 @@ effects
 
 ###Unordered Heading 3
 
-####2.1.2. Kiwi Ordered Headings
+####2.1.2. Ordered Headings
 
 ```
 #Ordered Heading 1
@@ -74,7 +74,7 @@ For a heading to be recognized, it must be surrounded by (at least) two empty
 lines unless it appears in the first line, in which case, only one empty line
 (or more) following it is required.
 
-###2.2. Kiwi List Block
+###2.2. Lists 
 
 The markup symbols for unordered and ordered lists match those for unordered
 and ordered headings.  The former defines smaller block structures, so `-` and
@@ -86,7 +86,7 @@ leading spaces by two.  Up to six indentation levels (including no
 indentation) are supported.  As we will see, *intuitive* indentation is a
 general feature of Kiwi.
 
-####2.2.1. Kiwi Unordered List Block
+####2.2.1. Unordered Lists
 
 ```
 - Red
@@ -100,7 +100,7 @@ effects
     * Green
         * Blue
 
-####2.2.2. Kiwi Ordered List Block
+####2.2.2. Ordered Lists
 
 ```
 + Red
@@ -114,7 +114,7 @@ effects
     1. Green
         1. blue
 
-####2.2.3. Kiwi Definition List Block
+####2.2.3. Definition Lists
 
 ```
 Red
@@ -136,7 +136,7 @@ effects
  <dd>a color</dd>
 </dl>
 
-###2.3. Kiwi Paragraph Block
+###2.3. Paragraphs
 
 ```
 A paragraph consists of one or more lines.
@@ -150,7 +150,29 @@ A paragraph consists of one or more lines.
 
 A blank line ends a paragraph.
 
-###2.4. Kiwi Code Block
+###2.4. Quotations
+
+```
+|
+Life itself is a quotation.  --- Jorge Luis Borges
+|
+```
+
+effects
+
+<blockquote>
+Life itself is a quotation.  --- Jorge Luis Borges
+</blockquote>
+
+###2.5. Formula
+
+```
+[
+E = mc^2
+]
+```
+
+###2.6. Code Block
 
 The simple requirement is that the symbols chosen should remind of code.
 Braces are probably the most-used symbols for code blocks.
@@ -180,29 +202,7 @@ By default, a code block *not* indented.  To indent one level to the right,
 insert one space before each line of the whole block, including the markup
 symbols.
 
-###2.5. Kiwi Formula Block
-
-```
-[
-E = mc^2
-]
-```
-
-###2.6. Kiwi Quotation Block
-
-```
-|
-Life itself is a quotation.  --- Jorge Luis Borges
-|
-```
-
-effects
-
-<blockquote>
-Life itself is a quotation.  --- Jorge Luis Borges
-</blockquote>
-
-###2.7. Kiwi Raw Block
+###2.7. Raw Block
 
 ```
 @
@@ -211,7 +211,7 @@ This text will be displayed |raw|, namely,
 @
 ```
 
-###2.8. Kiwi Target Block
+###2.8. Target Block
 
 ```
 !html
@@ -221,19 +221,19 @@ This target will only be handled when the file is converted to HTML.
 !
 ```
 
-###2.9. Kiwi Indented Block
+###2.9. Indentation
 
 Except the target block, any Kiwi block can be indented by simply inserting
 multiple spaces of two before the whole block, including the markup symbols.
 Up to six indentation levels (including no indentation) are supported.
 
-###2.10. Kiwi Text
+###2.10. Text
 
 The markup syntax for font faces all use *linear* symbols.  These symbols
 should as much as possible suggest the look the text they surround will be
 after being formatted.
 
-####2.10.1. Kiwi Bold Text
+####2.10.1. Bold Text
 
 ```
 |bold text|
@@ -243,7 +243,7 @@ effects
 
 **bold text**
 
-####2.10.2. Kiwi Emphasized Text
+####2.10.2. Emphasized Text
 
 ```
 /emphasized text/
@@ -253,7 +253,7 @@ effects
 
 *emphasized text*
 
-####2.10.3. Kiwi Underlined Text
+####2.10.3. Underlined Text
 
 ```
 _underlined text_
@@ -263,7 +263,7 @@ effects
 
 <u>underlined text</u>
 
-####2.10.4. Kiwi Strikeout Text
+####2.10.4. Strikeout Text
 
 ```
 -strikeout text-
@@ -287,39 +287,7 @@ But text as follows should.
 A compound -word is not a pseudo- word.
 ```
 
-####2.10.5. Kiwi Inline Code
-
-```
-{code piece} in text
-```
-
-effects
-
-`code piece` in text
-
-####2.10.6. Kiwi Inline Formula
-
-```
-[E = mc^2]
-```
-
-####2.10.7. Kiwi Inline Raw Text
-
-```
-@/unformatted/ |raw| _text_@
-```
-
-effects
-
-/unformatted/ |raw| \_text\_
-
-####2.10.8. Kiwi Inline Target
-
-```
-!html <u>This text will only be handled when the file is converted to HTML</u>!
-```
-
-####2.10.9. Kiwi Superscript
+####2.10.5. Superscript
 
 ```
 Super^multiple script^
@@ -339,7 +307,7 @@ effects
 
 <sup>multiple super</sup>script
 
-####2.10.10. Kiwi Subscript
+####2.10.6. Subscript
 
 ```
 Sub_multiple script_
@@ -359,13 +327,45 @@ effects
 
 <sub>multiple sub</sub>script
 
-###2.11. Kiwi Escape Symbols
+####2.10.7. Inline Formula
+
+```
+[E = mc^2]
+```
+
+####2.10.8. Inline Code
+
+```
+{code piece} in text
+```
+
+effects
+
+`code piece` in text
+
+####2.10.9. Inline Raw
+
+```
+@/unformatted/ |raw| _text_@
+```
+
+effects
+
+/unformatted/ |raw| \_text\_
+
+####2.10.10. Inline Target
+
+```
+!html <u>This text will only be handled when the file is converted to HTML</u>!
+```
+
+###2.10.11. Escape Symbols
 
 To escape a symbol, precede it with a single backslash ` \ `.  For example,
 `\-` gives a hyphen -.  In particular, ` \ ` followed by a Carrige Return
 forces a line break.
 
-###2.12. Kiwi Horizontal Rules
+###2.11. Horizontal Rules
 
 The number of `-` is required to be greater than four, to distinguish it from
 em-dash `---`.
@@ -376,18 +376,18 @@ em-dash `---`.
 
 ----
 
-###2.13. Kiwi References
+###2.12. References
 
 ` _ ` in the linked-text field indicates that no better face is intended for
 the link, show the label or the URL as is.
 
-###2.13.1. Kiwi Labels
+###2.12.1. Labels
 
 ```
 <label : labeled text>
 ```
 
-####2.13.2. Kiwi Cross-References
+####2.12.2. Cross-References
 
 ```
 <_ # label>
@@ -399,7 +399,7 @@ or
 <linked text # label>
 ```
 
-###2.13.3. Kiwi Hyper-References
+###2.12.3. Hyper-References
 
 ```
 <_ @ URL>
@@ -411,7 +411,7 @@ or
 <link text @ URL>
 ```
 
-###2.14. Kiwi Images
+###2.13. Images
 
 An image is supposed to be embedded in the rendered output.  Hence its link
 deserves the first field, *with* (`&`) a secondary caption.  The caption is
@@ -427,11 +427,11 @@ or
 <image URL & caption>
 ```
 
-###2.15. Alighnment
+###2.14. Alighnment
 
 Every source block can be aligned to the left, to the right or to the center.
 
-####2.15.1. Alighn to the Left
+####2.14.1. Alighn to the Left
 
 This is the default alignment, so the beginning and ending `<` are usually
 omitted.
@@ -440,13 +440,13 @@ omitted.
 This text is aligned to the left.
 <
 
-####2.15.1. Alighn to the Right
+####2.14.1. Alighn to the Right
 
 >
 This text is aligned to the right.
 >
 
-####2.15.1. Alighn to the Right
+####2.14.1. Alighn to the Right
 
 >
 This text is aligned to the center.
