@@ -15,13 +15,19 @@ this.
 Kiwi's syntax is designed from scratch.  For some parts, it may borrow the
 syntax directly from other [lightweight markup
 languages](https://en.wikipedia.org/wiki/Lightweight_markup_language), if the
-syntax indeed meets the criteria and no better choice seems available.
+syntax indeed meets the *SIE* criteria and no better choice seems available.
 Otherwise, it does not hesitate to propose new syntax.  The choice for each
 syntax is justified according to the *SIE* criteria.
 
 ###2.1. Headings
 
-Up to six levels are supported.
+Headings can go as deep as to six levels.  Structuring documents to deeper
+than six levels are considered a bad style.  The examples below only
+demonstrate headings to the third level.
+
+For a heading to be recognized, it must be surrounded by (at least) two empty
+lines unless it appears in the first line, in which case, only one empty line
+(or more) following it is required.
 
 ####2.1.1. Unordered Headings
 
@@ -75,21 +81,18 @@ effects
 
 ###1.1.1. Ordered Heading 3
 
-For a heading to be recognized, it must be surrounded by (at least) two empty
-lines unless it appears in the first line, in which case, only one empty line
-(or more) following it is required.
-
 ###2.2. Lists 
 
 The markup symbols for unordered and ordered lists match those for unordered
-and ordered headings.  The former defines smaller block structures, so `-` and
-`+` are used; the latter defines *larger* document structures, so `=` and `#`
-are used.  However, notice the difference that sub-lists are indented to
-indicate its nesting levels.  One-level indentation is made by inserting two
-spaces before the markup symbol.  To indent further, simply increment the
-leading spaces by two.  Up to six indentation levels (including no
-indentation) are supported.  As we will see, *intuitive* indentation is a
-general feature of Kiwi.
+and ordered headings respectively.  Lists define smaller block structure, so
+`-` and `+` are used; sections define *larger* document structure, so `=` and
+`#` are used.  However, notice that nesting levels of sub-lists are indicated
+by indentation, whereas those of sub-sections are indicated by repeating the
+markup symbols.
+
+As with headings, lists can be nested up to six levels.  At each level, to
+enter the next level, simply preceeding the markup symbol with two spaces.
+The examples below only demonstrate lists to the third level.
 
 ####2.2.1. Unordered Lists
 
@@ -179,8 +182,8 @@ E = mc^2
 
 ###2.6. Code Block
 
-The simple requirement is that the symbols chosen should remind of code.
-Braces are probably the most-used symbols for code blocks.
+The simple requirement is that the markup symbol chosen should remind of code.
+Braces, `{` and `}`, are probably the most-used symbols for code blocks.
 
 ```
 {
@@ -194,10 +197,10 @@ effects
 code block
 ```
 
-Symbols like <tt>```</tt> or <tt>'''</tt> are not chosen as they sit too much
-high above the baseline, which makes it hard for the eyes to isolate them from
-adjacent lines.  Compare the following syntax chosen by Markdown with the
-above syntax:
+Symbols like <tt>```</tt> or <tt>'''</tt> are not chosen as in most monospaced
+fonts, they sit too high above the baseline, which makes it hard for the eyes
+to separate them from adjacent lines.  Compare the following syntax chosen by
+Markdown with the above syntax:
 
     ```
     code block
@@ -209,6 +212,8 @@ symbols.
 
 ###2.7. Raw Block
 
+The `@` symbol means *as is*.
+
 ```
 @
 This text will be displayed |raw|, namely,
@@ -217,6 +222,8 @@ This text will be displayed |raw|, namely,
 ```
 
 ###2.8. Target Block
+
+A target block should alert both the writer and the reader!
 
 ```
 !html
@@ -228,14 +235,14 @@ This target will only be handled when the file is converted to HTML.
 
 ###2.9. Indentation
 
-Except the target block, any Kiwi block can be indented by simply inserting
-multiple spaces of two before the whole block, including the markup symbols.
-Up to six indentation levels (including no indentation) are supported.
+Except target block, any Kiwi block can be indented by inserting multiple
+spaces of two before the whole block.  Again, indentation can go as deep as to
+six levels.
 
 ###2.10. Text
 
-The markup syntax for font faces all use *linear* symbols.  These symbols
-should as much as possible suggest the look the text they surround will be
+The markup syntax for font faces all use *linear* symbols.  These symbols are
+chosen to suggest as much as possible the look of the text they marked up
 after being formatted.
 
 ####2.10.1. Bold Text
@@ -418,7 +425,7 @@ or
 
 ###2.13. Images
 
-An image is supposed to be embedded in the rendered output.  Hence its link
+An image is supposed to be embedded in the formatted output.  Hence its link
 deserves the first field, *with* (`&`) a secondary caption.  The caption is
 optional, ` _ ` indicates no caption.
 
