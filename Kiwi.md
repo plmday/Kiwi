@@ -437,19 +437,43 @@ right or to the center.
 This is the default alignment, so the beginning and ending `<` are usually
 omitted.
 
+```
 <
 This text is aligned to the left.
 <
+```
+
+effects
+
+<div align=left>
+This text is aligned to the left.
+</div>
 
 ####2.14.1. Align to the Right
 
+```
 >
 This text is aligned to the right.
 >
+```
+
+effects
+
+<div align=right>
+This text is aligned to the left.
+</div>
 
 ####2.14.1. Align to the Right
 
+```
 >
 This text is aligned to the center.
 <
+```
+
+effects
+
+<div align=center>
+This text is aligned to the left.
+</div>
 
