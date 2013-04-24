@@ -1,18 +1,23 @@
 #Kiwi
 
 Kiwi is a [wiki markup](https://en.wikipedia.org/wiki/Wiki_markup) language.
-It aims to be *simple*, *elegant* and *intuitive*.
+It aims to be *simple*, *intuitive* and *elegant*.  These three criteria,
+abbreviated as *SIE*, guides the whole design of Kiwi's syntax.
 
 ##1. Motivation
 
-Every wiki markup language in use today sucks!  Their syntax is *not* simple,
-*nor* elegant, *nor* intuitive.  Kiwi means to remedy this.
+Every wiki markup language in use today sucks to some degree!  Part of their
+syntax is *not* simple, *nor* intuitive, *nor* elegant.  Kiwi means to remedy
+this.
 
 ##2. Syntax
 
-The syntax is inspired by many other [lightweight markup
-languages](https://en.wikipedia.org/wiki/Lightweight_markup_language), thougth
-it is still in evolution.
+Kiwi's syntax is designed from scratch.  For some parts, it may borrow the
+syntax directly from other [lightweight markup
+languages](https://en.wikipedia.org/wiki/Lightweight_markup_language), if the
+syntax indeed meets the criteria and no better choice seems available.
+Otherwise, it does not hesitate to propose new syntax.  The choice for each
+syntax is justified according to the *SIE* criteria.
 
 ###2.1. Headings
 
