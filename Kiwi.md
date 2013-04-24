@@ -449,7 +449,7 @@ effects
 This text is aligned to the left.
 </div>
 
-####2.14.1. Align to the Right
+####2.14.2. Align to the Right
 
 ```
 >
@@ -463,7 +463,7 @@ effects
 This text is aligned to the left.
 </div>
 
-####2.14.1. Align to the Right
+####2.14.3. Align to the Right
 
 ```
 >
