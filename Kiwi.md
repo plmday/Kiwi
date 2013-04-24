@@ -429,7 +429,8 @@ or
 
 ###2.14. Alighnment
 
-Every source block can be aligned to the left, to the right or to the center.
+Except the target block, every Kiwi block can be aligned to the left, to the
+right or to the center.
 
 ####2.14.1. Alighn to the Left
 
