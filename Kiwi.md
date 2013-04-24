@@ -1,7 +1,7 @@
-#Kiwi Wiki
+#Kiwi
 
 Kiwi is a [wiki markup](https://en.wikipedia.org/wiki/Wiki_markup) language.
-It is intended to be *simple*, *elegant* and *intuitive*.
+It aims to be *simple*, *elegant* and *intuitive*.
 
 ##1. Motivation
 
