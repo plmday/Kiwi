@@ -467,13 +467,13 @@ This text is aligned to the left.
 
 ```
 >
-This text is aligned to the center.
+This text is aligned to the right.
 <
 ```
 
 effects
 
 <div align=center>
-This text is aligned to the left.
+This text is aligned to the center.
 </div>
 
