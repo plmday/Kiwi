@@ -427,3 +427,28 @@ or
 <image URL & caption>
 ```
 
+###2.15. Alighnment
+
+Every source block can be aligned to the left, to the right or to the center.
+
+####2.15.1. Alighn to the Left
+
+This is the default alignment, so the beginning and ending `<` are usually
+omitted.
+
+<
+This text is aligned to the left.
+<
+
+####2.15.1. Alighn to the Right
+
+>
+This text is aligned to the right.
+>
+
+####2.15.1. Alighn to the Right
+
+>
+This text is aligned to the center.
+<
+
