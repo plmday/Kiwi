@@ -408,7 +408,7 @@ or
 or
 
 ```
-<link text @ URL>
+<linked text @ URL>
 ```
 
 ###2.13. Images
