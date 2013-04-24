@@ -427,12 +427,12 @@ or
 <image URL & caption>
 ```
 
-###2.14. Alighnment
+###2.14. Alignment
 
 Except the target block, every Kiwi block can be aligned to the left, to the
 right or to the center.
 
-####2.14.1. Alighn to the Left
+####2.14.1. Align to the Left
 
 This is the default alignment, so the beginning and ending `<` are usually
 omitted.
@@ -441,13 +441,13 @@ omitted.
 This text is aligned to the left.
 <
 
-####2.14.1. Alighn to the Right
+####2.14.1. Align to the Right
 
 >
 This text is aligned to the right.
 >
 
-####2.14.1. Alighn to the Right
+####2.14.1. Align to the Right
 
 >
 This text is aligned to the center.
