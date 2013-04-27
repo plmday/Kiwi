@@ -160,6 +160,8 @@ A blank line ends a paragraph.
 
 ###2.4. Quotations
 
+The syntax for quotations is inspired by many email systems.
+
 ```
 |
 Life itself is a quotation.  --- Jorge Luis Borges
@@ -172,7 +174,14 @@ effects
 Life itself is a quotation.  --- Jorge Luis Borges
 </blockquote>
 
+Quotation marks like `'` or `"` are not chosen as in most monospaced fonts
+they sit too high above the baseline, which makes it hard for the eyes to
+separate them from adjacent lines.
+
 ###2.5. Formula
+
+Depending on the target format, formula are supposed to be typeset in either
+LaTeX or MathML.
 
 ```
 [
@@ -197,18 +206,13 @@ effects
 code block
 ```
 
-Symbols like <tt>```</tt> or <tt>'''</tt> are not chosen as in most monospaced
-fonts, they sit too high above the baseline, which makes it hard for the eyes
-to separate them from adjacent lines.  Compare the following syntax chosen by
-Markdown with the above syntax:
+Symbols like <tt>`</tt> are not chosen for the same reason of being too much
+above the baseline in most monospaced fonts.  Compare the following syntax
+chosen by Markdown with Kiwi's syntax:
 
     ```
     code block
     ```
-
-By default, a code block *not* indented.  To indent one level to the right,
-insert one space before each line of the whole block, including the markup
-symbols.
 
 ###2.7. Raw Block
 
@@ -223,7 +227,7 @@ This text will be displayed |raw|, namely,
 
 ###2.8. Target Block
 
-A target block should alert both the writer and the reader!
+A target block should *alert* some one!
 
 ```
 !html
@@ -235,13 +239,15 @@ This target will only be handled when the file is converted to HTML.
 
 ###2.9. Indentation
 
-Except target block, any Kiwi block can be indented by inserting multiple
-spaces of two before the whole block.  Again, indentation can go as deep as to
-six levels.
+By default, *no* Kiwi block is indented in the formatted output, including
+those that are typically so, like lists.  To indent a Kiwi block, insert
+multiple spaces of two before the whole block, including the markup symbols.
+Except the target block, any Kiwi block can be indented this way.  As usual,
+indentation can go as deep as to six levels.
 
 ###2.10. Text
 
-The markup syntax for font faces all use *linear* symbols.  These symbols are
+Most of the markup syntax for text use *linear* symbols.  These symbols are
 chosen to suggest as much as possible the look of the text they marked up
 after being formatted.
 
@@ -285,9 +291,9 @@ effects
 
 <strike>strikeout text</strike>
 
-When using strikeouts, it is recommended leaving at least one space at both
-the begining and the end, because a hyphen `-` is usually used to form a
-compound word.  Text like the following should not be formatted as strikeout.
+When using strikeouts, it is required to leave at least one space at both the
+ends, because a hyphen `-` is usually used to form a compound word.  Text like
+the following should not be formatted as strikeout.
 
 ```
 A compound-word is not a pseudo-word.
@@ -374,8 +380,8 @@ effects
 ###2.10.11. Escape Symbols
 
 To escape a symbol, precede it with a single backslash ` \ `.  For example,
-`\-` gives a hyphen -.  In particular, ` \ ` followed by a Carrige Return
-forces a line break.
+`\-` gives a hyphen -.  In particular, ` \ ` followed by a <kbd>CR</kbd>
+(Carrige Return) forces a line break.
 
 ###2.11. Horizontal Rules
 
@@ -426,8 +432,8 @@ or
 ###2.13. Images
 
 An image is supposed to be embedded in the formatted output.  Hence its link
-deserves the first field, *with* (`&`) a secondary caption.  The caption is
-optional, ` _ ` indicates no caption.
+deserves the first field, *with* (`&`) a secondary caption.  The caption field
+is optional.  ` _ ` indicates no caption.
 
 ```
 <image URL & _>
@@ -441,13 +447,13 @@ or
 
 ###2.14. Alignment
 
-Except the target block, every Kiwi block can be aligned to the left, to the
+Except the target block, any Kiwi block can be aligned to the left, to the
 right or to the center.
 
 ####2.14.1. Align to the Left
 
-This is the default alignment, so the beginning and ending `<` are usually
-omitted.
+This is the default alignment, so the beginning and ending `<` can be and are
+usually omitted.
 
 ```
 <
