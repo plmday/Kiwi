@@ -212,7 +212,7 @@ symbols.
 
 ###2.7. Raw Block
 
-The `@` symbol means *as is*.
+The `@` symbol means *raw as is*.
 
 ```
 @
@@ -472,14 +472,14 @@ This text is aligned to the right.
 effects
 
 <div align=right>
-This text is aligned to the left.
+This text is aligned to the right.
 </div>
 
 ####2.14.3. Align to the Right
 
 ```
 >
-This text is aligned to the right.
+This text is aligned to the center.
 <
 ```
 
