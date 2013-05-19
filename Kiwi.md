@@ -380,8 +380,8 @@ effects
 ###2.10.11. Escape Symbols
 
 To escape a symbol, precede it with a single backslash ` \ `.  For example,
-`\-` gives a hyphen -.  In particular, ` \ ` followed by a <kbd>CR</kbd>
-(Carrige Return) forces a line break.
+`\-` gives a hyphen -.  In particular, ` \ ` followed by a <kbd>Space</kbd> or
+a <kbd>Return</kbd> at the end of a line forces a line break.
 
 ###2.11. Horizontal Rules
 
