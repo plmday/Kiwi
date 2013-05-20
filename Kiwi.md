@@ -125,12 +125,12 @@ effects
 ####2.2.3. Definition Lists
 
 ```
-Red
-: a color
-Green
-: a color
-Blue
-: a color
+: Red
+  a color
+  : Green
+    a color
+    : Blue
+      a color
 ```
 
 effects
@@ -138,10 +138,18 @@ effects
 <dl>
  <dt>Red</dt>
  <dd>a color</dd>
- <dt>Green</dt>
- <dd>a color</dd>
- <dt>Blue</dt>
- <dd>a color</dd>
+ <dd>
+  <dl>
+   <dt>Green</dt>
+   <dd>a color</dd>
+   <dd>
+    <dl>
+     <dt>Blue</dt>
+     <dd>a color</dd>
+    </dl>
+   </dd>
+  </dl>
+ </dd>
 </dl>
 
 ###2.3. Paragraphs
