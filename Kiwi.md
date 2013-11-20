@@ -297,7 +297,7 @@ effects
 
 effects
 
-<strike>strikeout text</strike>
+~~strikeout text~~
 
 When using strikeouts, it is required to leave at least one space at both the
 ends, because a hyphen `-` is usually used to form a compound word.  Text like
