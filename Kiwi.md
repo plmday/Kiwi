@@ -191,9 +191,9 @@ Depending on the target format, formula are supposed to be typeset in either
 LaTeX or MathML.
 
 ```
-[
+<
 E = mc^2
-]
+>
 ```
 
 ###2.6. Code Block
@@ -412,13 +412,13 @@ em-dash `---`.
 The `label` is attached to the closest HTML element preceeding it.
 
 ```
-<# label>
+[# label]
 ```
 
 #####2.12.1.2. Links
 
 ```
-<linked text # label>
+[linked text # label]
 ```
 
 ####2.12.2. Hyper-References
@@ -426,13 +426,13 @@ The `label` is attached to the closest HTML element preceeding it.
 `@` for _at_:
 
 ```
-<@ URL>
+[@ URL]
 ```
 
 or
 
 ```
-<linked text @ URL>
+[linked text @ URL]
 ```
 
 ###2.13. Images
@@ -440,13 +440,13 @@ or
 `&` for _with_:
 
 ```
-<& image URL>
+[& image URL]
 ```
 
 or
 
 ```
-<caption & image URL>
+[caption & image URL]
 ```
 
 ###2.14. Alignment
