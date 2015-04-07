@@ -297,7 +297,7 @@ effects
 
 ~~strikeout text~~
 
-When using strikeouts, it is required to leave at least one space at both the
+When using strikeouts, it is required to leave at least one space at both
 ends, because a hyphen `-` is usually used to form a compound word.  Text like
 the following should not be formatted as strikeout.
 
@@ -310,6 +310,8 @@ But text as follows should.
 ```
 A compound -word is not a pseudo- word.
 ```
+
+In case of uncertainty, escape the hyphen.
 
 ####2.10.5. Superscript
 
