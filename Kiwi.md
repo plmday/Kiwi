@@ -32,7 +32,7 @@ lines unless it appears in the first line, in which case, only one empty line
 ####2.1.1. Unordered Headings
 
 ```
-=Unordered Heading 1
+*Unordered Heading 1
 ```
 
 effects
@@ -40,7 +40,7 @@ effects
 #Unordered Heading 1
 
 ```
-==Unordered Heading 2
+**Unordered Heading 2
 ```
 
 effects
@@ -48,7 +48,7 @@ effects
 ##Unordered Heading 2
 
 ```
-===Unordered Heading 3
+***Unordered Heading 3
 ```
 
 effects
