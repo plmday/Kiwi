@@ -423,7 +423,7 @@ The `label` is attached to the closest HTML element preceeding it.
 
 ####2.12.2. Hyper-References
 
-`@` for _at_:
+`@` for *at*:
 
 ```
 [@ URL]
@@ -435,9 +435,26 @@ or
 [linked text @ URL]
 ```
 
+####2.12.3. Citation
+
+`$`, for *credit*, plus the citation identifier from a database.
+
+```
+$id
+```
+or
+
+```
+[$id]
+```
+
+Author name can be suppressed by preceeding `$` with a minus sign `-`.  The
+syntax is inspired by [pandoc](http://johnmacfarlane.net/pandoc)
+[citations](http://johnmacfarlane.net/pandoc/README.html#citations).
+
 ###2.13. Images
 
-`&` for _with_:
+`&` for *with*:
 
 ```
 [& image URL]
