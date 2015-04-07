@@ -235,7 +235,7 @@ This text will be displayed |raw|, namely,
 
 ###2.8. Target Block
 
-A target block should *alert* some one!
+A target block should *alert* someone!
 
 ```
 !html
@@ -404,31 +404,28 @@ em-dash `---`.
 
 ###2.12. References
 
-` _ ` in the linked-text field indicates that no better face is intended for
-the link, show the label or the URL as is.
+####2.12.1. Cross-References
 
-###2.12.1. Labels
+#####2.12.1.1. Labels
 
-```
-<label : labeled text>
-```
-
-####2.12.2. Cross-References
+The `label` is attached to the closest HTML element preceeding it.
 
 ```
-<_ # label>
+<# label>
 ```
 
-or
+#####2.12.1.2. Links
 
 ```
 <linked text # label>
 ```
 
-###2.12.3. Hyper-References
+####2.12.2. Hyper-References
+
+`@` for _at_:
 
 ```
-<_ @ URL>
+<@ URL>
 ```
 
 or
@@ -439,18 +436,16 @@ or
 
 ###2.13. Images
 
-An image is supposed to be embedded in the formatted output.  Hence its link
-deserves the first field, *with* (`&`) a secondary caption.  The caption field
-is optional.  ` _ ` indicates no caption.
+`&` for _with_:
 
 ```
-<image URL & _>
+<& image URL>
 ```
 
 or
 
 ```
-<image URL & caption>
+<caption & image URL>
 ```
 
 ###2.14. Alignment
