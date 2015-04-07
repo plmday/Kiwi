@@ -499,3 +499,20 @@ effects
 This text is aligned to the center.
 </div>
 
+###2.15. Meta-Data Block
+
+Put a definition list inside `%`:
+
+```
+%
+= author
+  Hong-Yi Dai
+= title
+  Kiwi
+= date
+  2015-04-07
+= abstract
+  A simply, intuitive and elegent wiki
+%
+```
+
