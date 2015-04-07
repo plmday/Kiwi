@@ -393,7 +393,7 @@ To escape a symbol, precede it with a single backslash ` \ `.  For example,
 
 ###2.11. Horizontal Rules
 
-The number of `-` is required to be greater than four, to distinguish it from
+The number of `-` is required to be greater than three, to distinguish it from
 em-dash `---`.
 
 ```
