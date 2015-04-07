@@ -85,10 +85,11 @@ effects
 
 The markup symbols for unordered and ordered lists match those for unordered
 and ordered headings respectively.  Lists define smaller block structure, so
-`-` and `+` are used; sections define *larger* document structure, so `=` and
+`-` and `+` are used; sections define *larger* document structure, so `*` and
 `#` are used.  However, notice that nesting levels of sub-lists are indicated
 by indentation, whereas those of sub-sections are indicated by repeating the
-markup symbols.
+markup symbols, because the latter usually are not indented in the rendered
+output.
 
 As with headings, lists can be nested up to six levels.  At each level, to
 enter the next level, simply preceeding the markup symbol with two spaces.
