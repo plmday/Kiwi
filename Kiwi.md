@@ -125,11 +125,11 @@ effects
 ####2.2.3. Definition Lists
 
 ```
-: Red
+= Red
   a color
-  : Green
+  = Green
     a color
-    : Blue
+    = Blue
       a color
 ```
 
@@ -168,12 +168,10 @@ A blank line ends a paragraph.
 
 ###2.4. Quotations
 
-The syntax for quotations is inspired by many email systems.
-
 ```
-|
+:
 Life itself is a quotation.  --- Jorge Luis Borges
-|
+:
 ```
 
 effects
