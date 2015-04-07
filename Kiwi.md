@@ -237,7 +237,7 @@ This text will be displayed |raw|, namely,
 A target block should *alert* someone!
 
 ```
-!html
+!
 <p style="color:blue">
 This target will only be handled when the file is converted to HTML.
 </p>
@@ -383,7 +383,7 @@ effects
 ####2.10.10. Inline Target
 
 ```
-!html <u>This text will only be handled when the file is converted to HTML</u>!
+!<u>This text will only be handled when the file is converted to HTML</u>!
 ```
 
 ###2.10.11. Escape Symbols
