@@ -529,7 +529,7 @@ Put a definition list inside `%`:
 = date
   2015-04-07
 = abstract
-  A simply, intuitive and elegent wiki
+  A simple, intuitive and elegent wiki
 %
 ```
 
